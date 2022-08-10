@@ -12,13 +12,14 @@ public class Cat extends Mammal{
         this.killTotal = killTotal;
     }
 
-    public Cat(String name, String gender){
-        super(name, gender);
-
-    }
-
-    public void catAttack(Animals target){
-        target.getHP();
+    public Cat(){
+        setAge(5);
+        setName("Dave");
+        setKillTotal(4);
+        setDead(true);
+        setGender("Female");
+        setHP(100);
+        setAttack(10);
     }
 
     @Override

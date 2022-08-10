@@ -10,17 +10,15 @@ public abstract class Animals {
 
     private int age;
 
+    private String gender;
 
     private boolean dead;
 
-    private int HP = 100;
+    private int HP;
 
     private int attack;
 
-    private String name;
-
-    public Animals(String name){
-        this.name = name;
+    public Animals(){
 
     }
 

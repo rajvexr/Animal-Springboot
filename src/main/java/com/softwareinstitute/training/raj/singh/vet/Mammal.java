@@ -3,14 +3,6 @@ package com.softwareinstitute.training.raj.singh.vet;
 public abstract class Mammal extends Animals {
 
     private String name;
-    private String gender;
-
-    public Mammal(String name, String gender){
-        super(name);
-        this.gender = gender;
-
-
-    }
 
 
     public String getName() {
