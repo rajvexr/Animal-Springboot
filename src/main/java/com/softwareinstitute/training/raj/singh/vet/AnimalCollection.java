@@ -7,13 +7,17 @@ import java.util.List;
 
 public class AnimalCollection {
 
-    List<Animal> animalCollection = new ArrayList();
+    List<Animals> animalCollection = new ArrayList();
 
     public AnimalCollection(){
-        this.animalCollection.add(new Animal("john", "5", 5));
+        this.animalCollection.add(new Cat("Tom", 7, "Male", 100, 5, false));
+        this.animalCollection.add(new Bat("Bax", 22, "Female", 100, true));
+        this.animalCollection.add(new FlyingRat("Cosmo", 15, 100, true));
+        this.animalCollection.add(new Penguin("Buffy", 12, 100, false));
+
     }
 
-    public List<Animal> getAnimalCollection() {
+    public List<Animals> getAnimalCollection() {
         return this.animalCollection;
     }
 

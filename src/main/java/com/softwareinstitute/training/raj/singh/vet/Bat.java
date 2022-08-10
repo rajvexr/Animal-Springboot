@@ -2,17 +2,13 @@ package com.softwareinstitute.training.raj.singh.vet;
 
 public class Bat extends Mammal implements Flying{
 
-    public Bat(){
-        setName("flying creature");
-        setAge(3);
-        setDead(false);
-        setHP(100);
-        setAttack(10);
+    public Bat(String name, int age, String gender, int HP,boolean isDead) {
+        super(name, age, gender ,HP, isDead);
     }
 
     @Override
     public String eat() {
-        return (getName()+" eats night-flying insects");
+        return (this.name+" eats night-flying insects");
     }
 
     public String speak(){
@@ -21,16 +17,16 @@ public class Bat extends Mammal implements Flying{
 
     @Override
     public String takeFlight() {
-        return(getName()+ " takes flight");
+        return(this.name+ " takes flight");
     }
 
     @Override
     public String flight() {
-        return(getName()+ " is flying at night");
+        return(this.name+ " is flying at night");
     }
 
     @Override
     public String landing() {
-        return(getName()+" is beginning to land");
+        return(this.name+" is beginning to land");
     }
 }

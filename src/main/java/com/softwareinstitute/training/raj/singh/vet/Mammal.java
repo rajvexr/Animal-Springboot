@@ -2,15 +2,20 @@ package com.softwareinstitute.training.raj.singh.vet;
 
 public abstract class Mammal extends Animals {
 
-    private String name;
+    private String gender;
 
 
-    public String getName() {
-        return name;
+    public Mammal(String name, int age, String gender, int HP, boolean isDead) {
+        super(name, age, HP, isDead);
+        this.gender = gender;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
 

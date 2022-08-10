@@ -12,19 +12,14 @@ public class Cat extends Mammal{
         this.killTotal = killTotal;
     }
 
-    public Cat(){
-        setAge(5);
-        setName("Dave");
-        setKillTotal(4);
-        setDead(true);
-        setGender("Female");
-        setHP(100);
-        setAttack(10);
+    public Cat(String name, int age, String gender, int HP, int killTotal ,boolean isDead) {
+        super(name, age, gender ,HP, isDead);
+        this.killTotal = killTotal;
     }
 
     @Override
     public String eat() {
-        return (getName()+" is a meat eater");
+        return (this.name+" is a meat eater");
     }
 
     String speak(){

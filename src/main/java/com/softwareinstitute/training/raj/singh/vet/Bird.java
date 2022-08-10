@@ -2,16 +2,10 @@ package com.softwareinstitute.training.raj.singh.vet;
 
 public abstract class Bird extends Animals{
 
-    private String name;
 
-    public String getName() {
-        return name;
+    public Bird(String name, int age, int HP, boolean isDead) {
+        super(name, age, HP, isDead);
     }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
 
     @Override
     public String breathe() {

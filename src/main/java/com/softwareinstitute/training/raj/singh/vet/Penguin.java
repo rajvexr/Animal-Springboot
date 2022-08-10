@@ -2,20 +2,13 @@ package com.softwareinstitute.training.raj.singh.vet;
 
 public class Penguin extends Bird{
 
-
-
-    public Penguin(){
-        setAge(9);
-        setName("Bob");
-        setDead(false);
-        setHP(100);
-        setAttack(20);
+    public Penguin(String name, int age, int HP, boolean isDead) {
+        super(name, age, HP, isDead);
     }
-
 
     @Override
     public String eat() {
-        return (getName()+" eats krill, squids, and fishes");
+        return (this.name+" eats krill, squids, and fishes");
     }
     
 }
