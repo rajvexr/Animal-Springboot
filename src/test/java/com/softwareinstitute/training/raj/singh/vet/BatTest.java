@@ -45,5 +45,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
         Bat bat7 = new Bat("Bax", 22, "Female", 100, true);
         assertEquals("Bax is beginning to land", bat7.landing(), "the bat is not landing");
     }
+    @Test
+     void get_batSpeak(){
+        Bat bat8 = new Bat("Bax", 22, "Female", 100, true);
+        assertEquals("eee",bat8.speak(), "the bat is not speaking");
+
+    }
 
 }

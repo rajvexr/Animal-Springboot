@@ -48,4 +48,14 @@ class CatTest {
         Cat cat8 = new Cat("Tom", 7, "Male", 100, 5, false);
         assertEquals(100, cat8.getHP(), "that is not the cats health");
     }
+    @Test
+    void get_CatSpeak(){
+        Cat cat9 = new Cat("Tom", 7, "Male", 100, 5, false);
+        assertEquals("Meow", cat9.speak(), "the cat is not speaking");
+    }
+    @Test
+    void get_CatKillTotal(){
+        Cat cat10 = new Cat("Tom", 7, "Male", 100, 5, false);
+        assertEquals(5, cat10.getKillTotal(), "the cat didn't kill that much");
+    }
 }

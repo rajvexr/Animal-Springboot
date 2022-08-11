@@ -58,4 +58,10 @@ class FlyingRatTest {
         assertEquals("Cosmo lays eggs", frat9.breed(), "the flying rat is not breeding");
     }
 
+    @Test
+    void get_flyingRatSpeak(){
+        FlyingRat frat10 = new FlyingRat("Cosmo", 15, 100, true);
+        assertEquals("coo", frat10.speak(), "the flying rat is not speaking");
+    }
+
 }
