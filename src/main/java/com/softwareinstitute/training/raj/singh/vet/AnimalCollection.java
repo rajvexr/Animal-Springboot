@@ -22,6 +22,7 @@ public class AnimalCollection {
     }
 
     public String toString(String json){
-        return json = new Gson().toJson(animalCollection);
+        json = new Gson().toJson(animalCollection);
+        return json;
     }
 }
