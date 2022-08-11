@@ -5,6 +5,10 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+class bowlDecreases {
+
+}
+
 
 public class FeedCatSteps{
     private boolean isHungry;

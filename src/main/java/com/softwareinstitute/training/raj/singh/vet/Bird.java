@@ -3,7 +3,7 @@ package com.softwareinstitute.training.raj.singh.vet;
 public abstract class Bird extends Animals{
 
 
-    public Bird(String name, int age, int HP, boolean isDead) {
+    protected Bird(String name, int age, int HP, boolean isDead) {
         super(name, age, HP, isDead);
     }
 

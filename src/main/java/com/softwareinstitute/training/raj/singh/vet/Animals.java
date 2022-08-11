@@ -27,7 +27,7 @@ public abstract class Animals {
     /////////////////////
     /////constructor\\\\\
     /////////////////////
-    public Animals(String name, int age, int HP, boolean isDead){
+    protected Animals(String name, int age, int HP, boolean isDead){
         this.name= name;
         this.age = age;
         this.HP = HP;

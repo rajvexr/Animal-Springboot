@@ -5,7 +5,7 @@ public abstract class Mammal extends Animals {
     private String gender;
 
 
-    public Mammal(String name, int age, String gender, int HP, boolean isDead) {
+    protected Mammal(String name, int age, String gender, int HP, boolean isDead) {
         super(name, age, HP, isDead);
         this.gender = gender;
     }
