@@ -66,9 +66,6 @@ public abstract class Animals {
         return isDead;
     }
 
-    public void setDead(boolean dead) {
-        this.isDead = isDead;
-    }
 
     //////////////////
     /////methods\\\\\
