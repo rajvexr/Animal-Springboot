@@ -1,22 +1,29 @@
 package cats;
 
-
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 
-public class FeedCatSteps{
+class IsTheCatHungry{
+    static String isTheCatHungry(String hungry){
+        return "the cat is hungry".equals(hungry) ? "Yes":"No";
+    }
+}
 
-    boolean isHungry;
+
+
+public class FeedCatSteps{
+    private String isHungry;
 
 //////////////////////////////
     //the cat is hungry\\
 /////////////////////////////
     @Given("^the cat is hungry$")
     public void theCatIsHungry() {
-        isHungry = true;
+        //isHungry = true;
+
     }
 
     @And("^there is food in the bowl$")
@@ -54,7 +61,7 @@ public class FeedCatSteps{
 /////////////////////////////////
     @Given("^the cat is not hungry$")
     public void theCatIsNotHungry() {
-        isHungry= false;
+        ;
     }
 
     @When("^i try to feed the cat$")
