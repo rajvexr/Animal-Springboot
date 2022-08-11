@@ -2,8 +2,8 @@ package com.softwareinstitute.training.raj.singh.vet;
 
 public class FlyingRat extends Bird implements Flying{
 
-    public FlyingRat(String name, int age, int HP, boolean isDead) {
-        super(name, age, HP, isDead);
+    public FlyingRat(String name, int age, int hp, boolean isDead) {
+        super(name, age, hp, isDead);
     }
 
     @Override

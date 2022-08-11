@@ -46,7 +46,7 @@ class CatTest {
     @Test
     void get_CatHP(){
         Cat cat8 = new Cat("Tom", 7, "Male", 100, 5, false);
-        assertEquals(100, cat8.getHP(), "that is not the cats health");
+        assertEquals(100, cat8.getHp(), "that is not the cats health");
     }
     @Test
     void get_CatSpeak(){

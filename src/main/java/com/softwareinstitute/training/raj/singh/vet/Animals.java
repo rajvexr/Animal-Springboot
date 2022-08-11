@@ -22,15 +22,15 @@ public abstract class Animals {
 
     private boolean isDead;
 
-    private int HP;
+    private int hp;
 
     /////////////////////
     /////constructor\\\\\
     /////////////////////
-    protected Animals(String name, int age, int HP, boolean isDead){
+    protected Animals(String name, int age, int hp, boolean isDead){
         this.name= name;
         this.age = age;
-        this.HP = HP;
+        this.hp = hp;
         this.isDead = isDead;
     }
 
@@ -46,12 +46,12 @@ public abstract class Animals {
         this.name = name;
     }
 
-    public int getHP() {
-        return HP;
+    public int getHp() {
+        return hp;
     }
 
-    public void setHP(int HP) {
-        this.HP = HP;
+    public void setHp(int hp) {
+        this.hp = hp;
     }
 
     public int getAge() {
@@ -94,7 +94,7 @@ public abstract class Animals {
         return "{" +
                 "\"name\"= \"" + name +
                 "\", \"age\"=\"" + age +
-                "\", \"HP\"=\"" + HP +
+                "\", \"HP\"=\"" + hp +
                 "\", \"isDead\"" + isDead + "\"}";
     }
 

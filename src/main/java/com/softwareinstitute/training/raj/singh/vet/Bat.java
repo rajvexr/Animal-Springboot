@@ -2,8 +2,8 @@ package com.softwareinstitute.training.raj.singh.vet;
 
 public class Bat extends Mammal implements Flying{
 
-    public Bat(String name, int age, String gender, int HP,boolean isDead) {
-        super(name, age, gender ,HP, isDead);
+    public Bat(String name, int age, String gender, int hp,boolean isDead) {
+        super(name, age, gender ,hp, isDead);
     }
 
     @Override

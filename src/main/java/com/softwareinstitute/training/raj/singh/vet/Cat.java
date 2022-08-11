@@ -12,8 +12,8 @@ public class Cat extends Mammal{
         this.killTotal = killTotal;
     }
 
-    public Cat(String name, int age, String gender, int HP, int killTotal ,boolean isDead) {
-        super(name, age, gender ,HP, isDead);
+    public Cat(String name, int age, String gender, int hp, int killTotal ,boolean isDead) {
+        super(name, age, gender ,hp, isDead);
         this.killTotal = killTotal;
     }
 
