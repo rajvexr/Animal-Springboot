@@ -11,6 +11,7 @@ Feature: feed the cat
     Then the cat should eat the food
     And the cat should no longer be hungry
     And the amount of food in the bowl decreases
+    Then the food in the bowl is empty
 
   Scenario: Cat is not hungry
       Given the cat is not hungry

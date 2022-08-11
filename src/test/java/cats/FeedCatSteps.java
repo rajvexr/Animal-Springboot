@@ -1,39 +1,32 @@
 package cats;
 
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
-
-
-class IsTheCatHungry{
-    static String isTheCatHungry(String hungry){
-        return "the cat is hungry".equals(hungry) ? "Yes":"No";
-    }
-}
-
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 
 public class FeedCatSteps{
-    private String isHungry;
+    private boolean isHungry;
+    private boolean isBowlEmpty;
+    private double bowlWithFood;
 
 //////////////////////////////
     //the cat is hungry\\
 /////////////////////////////
     @Given("^the cat is hungry$")
     public void theCatIsHungry() {
-        //isHungry = true;
-
+        isHungry = true;
     }
 
     @And("^there is food in the bowl$")
-    public String thereIsFoodInTheBowl() {
-        return("there is food in the bowl");
+    public void thereIsFoodInTheBowl() {
+        isBowlEmpty = false;
     }
 
     @And("^the cat likes the food on offer$")
-    public String theCatLikesTheFoodOnOffer() {
-        return("the cat likes the food on offer");
+    public void theCatLikesTheFoodOnOffer() {
+        String catLikesFood = "the cat likes the food on offer";
     }
 
     @When("^i want to feed the cat$")
@@ -47,8 +40,8 @@ public class FeedCatSteps{
     }
 
     @And("^the cat should no longer be hungry$")
-    public String theCatShouldNoLongerBeHungry() {
-        return("the cat should no longer be hungry");
+    public void theCatShouldNoLongerBeHungry() {
+        isHungry = false;
     }
 
     @And("^the amount of food in the bowl decreases$")
@@ -56,12 +49,17 @@ public class FeedCatSteps{
         return("the amount of food in the bowl decreases");
     }
 
+    @Then("^the food in the bowl is empty$")
+    public void theFoodInTheBowlIsEmpty() {
+        isBowlEmpty = true;
+    }
+
 /////////////////////////////////
     //the cat is not hungry\\
 /////////////////////////////////
     @Given("^the cat is not hungry$")
     public void theCatIsNotHungry() {
-        ;
+        isHungry= false;
     }
 
     @When("^i try to feed the cat$")
