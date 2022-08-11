@@ -16,10 +16,9 @@ public abstract class Animals {
     /////attributes\\\\\
     ////////////////////
 
-    public String name;
+    protected String name;
 
     private int age;
-
 
     private boolean isDead;
 
@@ -54,7 +53,6 @@ public abstract class Animals {
     public void setHP(int HP) {
         this.HP = HP;
     }
-
 
     public int getAge() {
         return age;
@@ -96,7 +94,11 @@ public abstract class Animals {
 
     @Override
     public String toString(){
-        return "{" + "\", \"name\"=\"" + name + "\", \"age\"=\"" + age + "\"}";
+        return "{" +
+                "\"name\"= \"" + name +
+                "\", \"age\"=\"" + age +
+                "\", \"HP\"=\"" + HP +
+                "\", \"isDead\"" + isDead + "\"}";
     }
 
 }

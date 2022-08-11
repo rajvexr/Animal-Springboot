@@ -14,7 +14,7 @@ public class VetApplication {
 		SpringApplication.run(VetApplication.class, args);
 	}
 	//@CrossOrigin("http://localhost:3000")
-	@GetMapping("/customRoute")
+	@GetMapping("/customRoute") //http://localhost:8080/customRoute
 	public String myResponse() {
 		AnimalCollection animalCollection = new AnimalCollection();
 		return animalCollection.toString();
