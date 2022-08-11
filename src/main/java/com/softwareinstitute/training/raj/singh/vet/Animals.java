@@ -88,8 +88,8 @@ public abstract class Animals {
         return ("the animal is pooping");
     }
 
-    void checkAge() {
-        if (getAge() < 0) {
+    void checkAge( int age) {
+        if (age < 0) {
             throw new IllegalArgumentException("Age cannot be a negative value");
         }
     }
