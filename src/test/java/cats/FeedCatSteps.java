@@ -1,11 +1,14 @@
 package cats;
 
+import com.softwareinstitute.training.raj.singh.vet.Cat;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class FeedCatSteps{
+
+    private Cat cat = new Cat("Tom", 7, "Male", 100, 5, false);
     private boolean isHungry;
     private boolean isBowlEmpty;
     private double bowlWithFood;
